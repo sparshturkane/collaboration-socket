@@ -12,6 +12,7 @@ server.listen(port, function () {
 // Routing
 app.use(express.static(path.join(__dirname, 'public')));
 
+
 io.on('connection', function (socket) {
   console.log("user connected")
   // when client emits NEW_MESSAGE
@@ -22,8 +23,6 @@ io.on('connection', function (socket) {
       message: data
     });
   });
-
-
 
   // when the user disconnects.. perform this
   socket.on('disconnect', function () {

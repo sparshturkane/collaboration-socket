@@ -1,0 +1,28 @@
+body {
+  /* font-family: 'Sacramento', cursive; */
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.customInputType {
+  padding: 0px !important;
+  margin: 0px !important;
+  margin-bottom: -8px !important;
+  background-color: white !important;
+  color: black;
+}
+
+.customFooter {
+  padding: 0px !important;
+  margin: 0px;
+}
+
+.customButton {
+  margin: 13px 0px 0px -7px;
+}
+
